@@ -1,6 +1,5 @@
-
 import os
-import Backend.functions as functions
+import functions 
 from dotenv import load_dotenv
 load_dotenv()
 STEAM_API_KEY = os.getenv('STEAM_API_KEY')    
@@ -31,10 +30,3 @@ for p in players:
         print("Non sta giocando a nulla")
     else:
         print("Sta giocando a ", p.get("gameextrainfo"))
-    
-
-        
-
-        
-
-
